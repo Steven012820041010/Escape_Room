@@ -10,6 +10,7 @@ public class Door extends World
 {
     Exit exit = new Exit();
     Apple apple = new Apple();
+    Incorrect incorrect = new Incorrect();
 
     int currDigit = 0;
     int currPassword = 0;
@@ -27,6 +28,7 @@ public class Door extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1130, 800, 1); 
         addObject(exit, 65, 35);
+        
         //addObject(apple, 397, 480);
     }
 
@@ -48,6 +50,7 @@ public class Door extends World
             my = mouse.getY();
             if (Greenfoot.mouseClicked(null)) {
                 if (!p.isEmpty() && mx > 390 && mx < 404 && my > 460 && my < 500) {
+                    removeObject(incorrect);
                     removeObject(p.pop());
                     currPassword /= 10;
                     l_x -= 33;
@@ -70,6 +73,8 @@ public class Door extends World
                         
                         Door_Animation dA = new Door_Animation();
                         Greenfoot.setWorld(dA);
+                    }else{
+                        addObject(incorrect, 345, 420);
                     }
                 }
             }

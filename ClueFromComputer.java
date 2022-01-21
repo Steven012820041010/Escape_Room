@@ -20,9 +20,28 @@ public class ClueFromComputer extends World
         MainRoom.computer = true;
         addObject(exit, 65, 35);
     }
+    public void closeTab()
+    {
+        MouseInfo mouse = Greenfoot.getMouseInfo();
+        int mx, my;
+        if(mouse!=null){
+            mx = mouse.getX();
+            my = mouse.getY();
+            
+            if (Greenfoot.mouseClicked(null)) {
+                //System.out.println(mx);
+                //System.out.println(my);
+                if (mx > 852 && mx < 872 && my > 110 && my < 130) {//min and max should be the edges of the area;
+                    Computer_Screen cS = new Computer_Screen();
+                    Greenfoot.setWorld(cS);
+                }
+            }
+        }
+    }
     
     public void act()
     {
         MainRoom.countDown();
+        closeTab();
     }
 }
