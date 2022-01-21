@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Computer_Cheating
+comment0.text=\n\ Write\ a\ description\ of\ class\ Computer_Cheating\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Computer_Cheating()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Computer_Cheating.\n\ \n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ clickSort()
+comment4.params=
+comment4.target=void\ bubbleSort()
+comment5.params=
+comment5.target=void\ insertionSort()
+comment6.params=
+comment6.target=void\ selectionSort()
+comment7.params=
+comment7.target=void\ quickSort()
+comment8.params=
+comment8.target=void\ binarySearch()
+comment9.params=
+comment9.target=void\ hideAndSeek()
+numComments=10

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Loading_Page
+comment0.text=\n\ Write\ a\ description\ of\ class\ Loading_Page\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Loading_Page()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ updateLoadingSign()
+comment3.text=\n\ Keeps\ the\ red\ progress\ rectangle\ moving\ forward\n
+comment4.params=
+comment4.target=void\ ifFinishLoading()
+comment4.text=\n\ \ Switch\ to\ the\ game\ after\ finishing\ loading\ \n
+numComments=5

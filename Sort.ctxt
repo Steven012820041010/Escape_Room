@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Sort
+comment0.text=\n\ Write\ a\ description\ of\ class\ Sort\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\n\ Act\ -\ do\ whatever\ the\ Sort\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment2.params=arr
+comment2.target=void\ setup(double[])
+comment2.text=\n\ Set\ up\ the\ array\ so\ that\ every\ element\ has\ a\ value\ that\ is\ an\ integer\n\ from\ 1\ to\ the\ length\ of\ the\ array\ (1\ -\ N).\n\ @param\ arr\ An\ array\ of\ integers\n
+comment3.params=arr\ i\ j
+comment3.target=void\ swap(double[],\ int,\ int)
+comment3.text=\n\ TODO\:\ Implement\ this\ method\n\ Swap\ elements\ at\ index\ positions\ i\ and\ j\ in\ the\ given\ array.\ \ \n\ @param\ arr\ An\ integer\ array\n\ @param\ a\ The\ index\ of\ one\ of\ the\ elements\ to\ swap\n\ @param\ b\ The\ index\ of\ the\ other\ element\ to\ swap\ with\n
+comment4.params=arr
+comment4.target=void\ shuffle(double[])
+comment4.text=\n\ Shuffle\ an\ array\ using\ the\ Fisher-Yates\ method.\n\ The\ Fisher-Yates\ method\ iterates\ the\ array\ once,\ swapping\ each\n\ element\ with\ a\ random\ element\ chosen\ in\ the\ range\ between\n\ the\ current\ position\ to\ the\ length\ of\ the\ array.\n\ @param\ arr\ An\ array\ of\ integers\n
+comment5.params=arr
+comment5.target=void\ drawArray(double[])
+comment5.text=\n\ Draw\ the\ given\ array\n\ @param\ arr\ An\ array\ of\ integers\n
+comment6.params=arr\ k
+comment6.target=void\ drawArray(double[],\ int)
+comment6.text=\n\ Draw\ the\ given\ array,\ highlighting\ the\ element\ at\ position\ k\n\ @param\ arr\ An\ integer\ array\n\ @param\ k\ The\ position\ in\ the\ array\ to\ draw\ in\ a\ different\ color.\ k\ <\ arr.length\n
+numComments=7

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Computer_Win
+comment0.text=\n\ Write\ a\ description\ of\ class\ Computer_Win\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Computer_Win()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Computer_Win.\n\ \n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ pressContinue()
+numComments=4

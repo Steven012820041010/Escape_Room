@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Computer_Maze_Win
+comment0.text=\n\ Write\ a\ description\ of\ class\ Computer_Maze_Win\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=Computer_Maze_Win()
+comment2.params=
+comment2.target=void\ setUpCorrectPath()
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ demonstration()
+comment5.params=
+comment5.target=void\ closeWindow()
+comment6.params=
+comment6.target=void\ bfs()
+numComments=7
