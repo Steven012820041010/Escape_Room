@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Door_Animation here.
+ * This world displays the animaition of opening the door
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 19, 2022
  */
 public class Door_Animation extends World
 
@@ -22,13 +22,13 @@ public class Door_Animation extends World
     
     public void act()
     {
-        if (d.titleI == 3 && d.fading.millisElapsed() > 600){
-            End_Screen eS = new End_Screen();
+        if (d.titleI == 3 && d.fading.millisElapsed() > 600){ //Finish Animation
+            End_Screen eS = new End_Screen(); 
             Greenfoot.setWorld(eS);
             return;
         }
         d.update();
-        
+
     }
     
 }

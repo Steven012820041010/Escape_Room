@@ -1,10 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.*;
+
 /**
- * Write a description of class Computer_Maze_Win here.
+ * This world displays the shortest path of walking through the maze and allows the user to compare it with their own paths.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 20, 2022
  */
 public class Computer_Maze_Win extends Computer
 {
@@ -13,27 +14,28 @@ public class Computer_Maze_Win extends Computer
      * Constructor for objects of class Computer_Maze_Win.
      * 
      */
+    
+    Label user;
+    Label computer;
+    
     Guider g = new Guider();
     Computer_Maze cm = new Computer_Maze();
-    int minimumStep = 0;
+    int minimumStep; // The minimum number to walk through the maze
     int [][] dist = new int [8][8]; // Record the distance from each grid
 
-    boolean [][] maze = cm.maze;
+    boolean [][] maze = cm.maze; // Copy the maze from Computer_Maze world
     boolean [][] visited = new boolean [8][8];
-    int [][] coordinates = new int [22][2];
+    int [][] coordinates = new int [22][2]; // Track the coordinates of the guider
 
     SimpleTimer speed = new SimpleTimer();
-    int currIndex = 0; //Record curr coordinates that guider is on
+    int currIndex = 0; //Record curr coordinates that guider is at
     
-    Label computer;
-    Label user;
-
-    //Exit exit = new Exit();
     public Computer_Maze_Win()
     {
         speed.mark();
-        bfs();
-        minimumStep = dist[7][7];
+        bfs(); // Find the shortest distance
+        minimumStep = dist[7][7]; // Set the minimum step
+        
         computer = new Label (minimumStep, 40);
         user = new Label (Computer_Maze.totalStep, 40);
         
@@ -43,11 +45,13 @@ public class Computer_Maze_Win extends Computer
         user.setFillColor(Color.GREEN);
         addObject(user, 920, 265);
         
-        setUpCorrectPath();
+        setUpCorrectPath(); // Find the correct path
         addObject(g, 386, 483);
-
     }
-
+    
+    /**
+     * Find the correct coordinates for the guider
+     */
     public void setUpCorrectPath()
     {
         coordinates[0][0] = 386; coordinates[0][1] = 483; 
@@ -86,9 +90,12 @@ public class Computer_Maze_Win extends Computer
     {
         demonstration();
         closeWindow();
-
+        MainRoom.countDown();
     }
     
+    /**
+     * Demonstrate the closest path
+     */
     public void demonstration()
     {
         if(speed.millisElapsed()>500 && currIndex < 22){
@@ -99,7 +106,9 @@ public class Computer_Maze_Win extends Computer
         }
     }
     
-    
+    /**
+     * Switch to the maze game
+     */
     public void closeWindow()
     {
         MouseInfo mouse = Greenfoot.getMouseInfo();
@@ -108,9 +117,8 @@ public class Computer_Maze_Win extends Computer
             mx = mouse.getX();
             my = mouse.getY();
             if (Greenfoot.mouseClicked(null)) {
-                
-                if ((mx > 972 && mx < 990 && my > 90 && my < 107)) {//min and max should be the edges of the area;
-                    Computer_Maze.totalStep = 0;
+                if ((mx > 972 && mx < 990 && my > 90 && my < 107)) {
+                    Computer_Maze.totalStep = 0; 
                     Computer_Screen cS = new Computer_Screen();
                     Greenfoot.setWorld(cS);
                 }
@@ -118,7 +126,10 @@ public class Computer_Maze_Win extends Computer
         }
 
     }
-
+    
+    /**
+     * Algorithm for searching a tree data structure for a node that satisfies a given property.
+     */
     public void bfs()
     {
         Queue<int[]> q = new LinkedList<int[]>();

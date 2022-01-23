@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Door
-comment0.text=\n\ Write\ a\ description\ of\ class\ Door\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ world\ displays\ the\ security\ lock\ and\ user\ can\ input\ their\ password\ by\ pressing\ the\ buttons\ on\ the\ lock.\ If\ the\ password\ is\ correct,\ the\ world\n\ will\ be\ lead\ to\ the\ end\ screen;\ otherwise,\ an\ "INCORRECT"\ sign\ will\ be\ displayed\ on\ the\ screen\ of\ the\ lock\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 15,\ 2022\n
 comment1.params=
 comment1.target=Door()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Door.\n\ \n
@@ -8,8 +8,11 @@ comment2.params=
 comment2.target=void\ act()
 comment3.params=
 comment3.target=void\ retract()
+comment3.text=\n\ Remove\ the\ previous\ password\ that\ user\ just\ inputs\n
 comment4.params=
 comment4.target=void\ unlock()
+comment4.text=\n\ Click\ the\ unlock\ button\ \n
 comment5.params=
-comment5.target=void\ touchLock()
+comment5.target=void\ clickLockPassword()
+comment5.text=\n\ Click\ the\ digit\ on\ the\ lock\n
 numComments=6

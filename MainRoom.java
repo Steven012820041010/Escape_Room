@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MyWorld here.
+ * This world contains all the elements and various transitions. It connects to many other worlds.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 10, 2022
  */
 public class MainRoom extends World
 {
@@ -28,7 +28,6 @@ public class MainRoom extends World
     //Clock right-top: (1040, 60);
     //Clock right-bottom: (1040, 155);
 
-    Apple apple = new Apple();
     PrinterClue pC = new PrinterClue();
 
     Deposit_Box dB = new Deposit_Box();
@@ -36,40 +35,34 @@ public class MainRoom extends World
     Deposit_Lock dL = new Deposit_Lock();
     Key_Hint kH = new Key_Hint();
     Key key = new Key();
+    boolean hasKey = false;
 
     TV_Snake_Screen snakeScreen = new TV_Snake_Screen();
     Window_Screen windowScreen = new Window_Screen();
-    boolean touchSnakeButton = false;
+    // Determine which image should be displayed on the screen
+    boolean touchSnakeButton = false; 
     boolean touchComputerButton = false;
 
-    boolean hasKey = false;
-    
     First first = new First();
     Second second = new Second();
     Third third = new Third();
     Fourth fourth = new Fourth();
 
-    static boolean carpet = false;
-    static boolean deposit = false;
-    static boolean snake = false;
-    static boolean computer = false;
+    static boolean carpet = false; // Show the clue from carpet if user found it
+    static boolean deposit = false; // Show the clue from deposit if user found it
+    static boolean snake = false; // Show the clue from snake if user found it
+    static boolean computer = false; // Show the clue from computer if user found it
     
     static SimpleTimer wholeTimer = new SimpleTimer();
     static int totalPlayingTime = 0;
     
     public MainRoom()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 1130x800 cells with a cell size of 1x1 pixels.
         super(1130, 800, 1); 
         Music.playSound.stop(); 
         addObject(kH, 986, 174);
         addObject(dL, 53, 431);
-        
-        
-        
-        
-        //addObject(apple, 54, 434);
-
     }
 
     public void act()
@@ -103,50 +96,41 @@ public class MainRoom extends World
             mx = mouse.getX();
             my = mouse.getY();
             if (Greenfoot.mouseClicked(null)) {
-                System.out.println(mx);
-                System.out.println(my);
-                if (carpet && mx > 15 && mx < 51 && my > 11 && my < 67) {//min and max should be the edges of the area;
+                if (carpet && mx > 15 && mx < 51 && my > 11 && my < 67) {
                     ClueFromCarpet cFC = new ClueFromCarpet();
                     Greenfoot.setWorld(cFC);
                 }
                 
-                if (deposit && mx > 75 && mx < 111 && my > 11 && my < 67) {//min and max should be the edges of the area;
+                if (deposit && mx > 75 && mx < 111 && my > 11 && my < 67) {
                     ClueFromDeposit cFD = new ClueFromDeposit();
                     Greenfoot.setWorld(cFD);
                 }
                 
-                if (snake && mx > 135 && mx < 171 && my > 11 && my < 67) {//min and max should be the edges of the area;
+                if (snake && mx > 135 && mx < 171 && my > 11 && my < 67) {
                     ClueFromPrinter cFP = new ClueFromPrinter();
                     Greenfoot.setWorld(cFP);
                 }
                 
-                if (computer && mx > 195 && mx < 261 && my > 11 && my < 67) {//min and max should be the edges of the area;
+                if (computer && mx > 195 && mx < 261 && my > 11 && my < 67) {
                     ClueFromComputerSecond cFc = new ClueFromComputerSecond();
                     Greenfoot.setWorld(cFc);
                 }
-                
-                
             }
         }
     }
     
-    
-    
-    
-    
-    
+    /**
+     * Record the player's game time, in seconds.
+     */
     public static void countDown(){
         if (wholeTimer.millisElapsed() > 1000)
         {
             wholeTimer.mark();
             totalPlayingTime++;
-           
         }
 
     }
     
-    
-
     public void touchClueFromCarpet()
     {
         MouseInfo mouse = Greenfoot.getMouseInfo();
@@ -155,7 +139,7 @@ public class MainRoom extends World
             mx = mouse.getX();
             my = mouse.getY();
             if (Greenfoot.mouseClicked(null)) {
-                if (mx > 838 && mx < 848 && my > 710 && my < 720) {//min and max should be the edges of the area;
+                if (mx > 838 && mx < 848 && my > 710 && my < 720) {
                     carpet = true;
                     ClueFromCarpet cFC = new ClueFromCarpet();
                     Greenfoot.setWorld(cFC);
@@ -172,7 +156,7 @@ public class MainRoom extends World
             mx = mouse.getX();
             my = mouse.getY();
             if (Greenfoot.mouseClicked(null)) {
-                if (mx > 980 && mx < 992 && my > 168 && my < 180) {//min and max should be the edges of the area;
+                if (mx > 980 && mx < 992 && my > 168 && my < 180) {
                     removeObject(kH);
                     addObject(key, 1040, 715);
                 }
@@ -187,10 +171,8 @@ public class MainRoom extends World
         if(mouse!=null){
             mx = mouse.getX();
             my = mouse.getY();
-
             if (hasKey){
                 if (Greenfoot.mouseClicked(dL)){
-                   
                     addObject(dB, 81, 416);
                     addObject(dD, 184, 417);
                     hasKey = false;
@@ -200,12 +182,10 @@ public class MainRoom extends World
                     addObject(key, 1040, 715);
                 }
             }
-
             if (Greenfoot.mouseClicked(key)) {
                 removeObject(key);
                 hasKey = true;
             }
-            
         }
     }
 
@@ -217,7 +197,7 @@ public class MainRoom extends World
             mx = mouse.getX();
             my = mouse.getY();
             if (Greenfoot.mouseClicked(null)) {
-                if (mx > 910 && mx < 928 && my > 519 && my < 550) {//min and max should be the edges of the area;
+                if (mx > 910 && mx < 928 && my > 519 && my < 550) {
                     Door d = new Door();
                     Greenfoot.setWorld(d);
                 }
@@ -234,7 +214,7 @@ public class MainRoom extends World
             mx = mouse.getX();
             my = mouse.getY();
             if (Greenfoot.mouseClicked(null)) {
-                if (mx > 654 && mx < 666  && my > 561  && my < 573) {//min and max should be the edges of the area;
+                if (mx > 654 && mx < 666  && my > 561  && my < 573) {
                     touchSnakeButton = true;
                     touchComputerButton = false;
                     addObject(snakeScreen, 367, 331);
@@ -253,7 +233,7 @@ public class MainRoom extends World
             mx = mouse.getX();
             my = mouse.getY();
             if (Greenfoot.mouseClicked(null)) {
-                if (mx > 40 && mx < 80 && my > 634 && my < 664) {//min and max should be the edges of the area;
+                if (mx > 40 && mx < 80 && my > 634 && my < 664) {
                     touchComputerButton = true;
                     touchSnakeButton = false;
                     addObject(windowScreen, 367, 331);
@@ -272,7 +252,7 @@ public class MainRoom extends World
             mx = mouse.getX();
             my = mouse.getY();
             if (Greenfoot.mouseClicked(null)) {
-                if (mx > 196 && mx < 535 && my > 240 && my < 420) {//min and max should be the edges of the area;
+                if (mx > 196 && mx < 535 && my > 240 && my < 420) {
                     if(touchSnakeButton){
                         Snake_Title sT = new Snake_Title();
                         Greenfoot.setWorld(sT);

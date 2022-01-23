@@ -1,30 +1,34 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Computer_Cheating here.
+ * This world displays four sorting algorithms: Bubble Sort, Insertion Sort, Selection Sort, and Quick Sort, and shows the amount of 
+ * time for each sorting algorithm takes. Also, binary search is also adding in this world to "mock" the user for considering 
+ * searching as sorting. XD
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 17, 2022
  */
 public class Computer_Cheating extends Computer
 {
     Exit exit = new Exit();
-    Apple apple = new Apple();
-    int currButtonState = 0; //Bubble: 1; Insertion: 2; Selection: 3; Quick: 4; Binary: 5;
+
+    //Image of different sortings
     BubbleS bS = new BubbleS();
     InsertionS iS = new InsertionS();
     SelectionS sS = new SelectionS();
     QuickS qS = new QuickS();
     Binary binary = new Binary();
     BinaryMock mock = new BinaryMock();
-    Label currTime = new Label(" ", 20);
-    
+
+    //Displaying different sorting methods
     BubbleSort b = new BubbleSort();
     InsertionSort i = new InsertionSort();
     SelectionSort s = new SelectionSort();
     QuickSort q = new QuickSort();
     BinarySearch bi = new BinarySearch();
-    
+
+    int currButtonState = 0; //Bubble: 1; Insertion: 2; Selection: 3; Quick: 4; Binary: 5;
+    Label currTime = new Label(" ", 20); // Displaying the amount of time for each sorting algorithm takes
 
     /**
      * Constructor for objects of class Computer_Cheating.
@@ -32,22 +36,23 @@ public class Computer_Cheating extends Computer
      */
     public Computer_Cheating()
     {
-        currTime.setFillColor(Color.BLACK);
-        addObject(exit, 65, 35);
-        //addObject(apple, 565, 484);
-
+        currTime.setFillColor(Color.BLACK); // Set the color of label "currTime" to black
+        addObject(exit, 65, 35); //Add the exit button
     }
 
     public void act()
     {
+        MainRoom.countDown();
         closeTab();
         hideAndSeek();
         clickSort();
         Computer_DMOMG.continueCountdown();
         Computer_Waiting.finish();
-        MainRoom.countDown();
     }
 
+    /**
+     * Detect which sorting algorithms that user clicks
+     */
     public void clickSort()
     {
         MouseInfo mouse = Greenfoot.getMouseInfo();
@@ -57,209 +62,129 @@ public class Computer_Cheating extends Computer
             my = mouse.getY();
             if (Greenfoot.mouseClicked(null)) {
                 //Bubble
-                if (mx > 360 && mx < 450 && my > 442 && my < 472) {//min and max should be the edges of the area;
-                    bubbleSort();
-                }
+                if (mx > 360 && mx < 450 && my > 442 && my < 472) bubbleSort();
 
                 //Insertion
-                else if (mx > 469 && mx < 559 && my > 442 && my < 472) {//min and max should be the edges of the area;
-                    insertionSort();
-                }
+                if (mx > 469 && mx < 559 && my > 442 && my < 472) insertionSort();
 
                 //Selection 
-                else if (mx > 578 && mx < 668 && my > 442 && my < 472) {//min and max should be the edges of the area;
-                    selectionSort();
-                }
+                if (mx > 578 && mx < 668 && my > 442 && my < 472) selectionSort();
 
                 //Quick
-                else if (mx > 687 && mx < 777 && my > 442 && my < 472) {//min and max should be the edges of the area;
-                    quickSort();
-                }
+                if (mx > 687 && mx < 777 && my > 442 && my < 472) quickSort();                     
 
                 //Binary Search
-                else if (mx > 520 && mx < 610 && my > 469 && my < 509) {//min and max should be the edges of the area;
-                    binarySearch();
-                }
+                if (mx > 520 && mx < 610 && my > 469 && my < 509) binarySearch();
             }
-
         }
     }
 
+    /**
+     * Clear all the objects on the display canvas and reset the timer
+     */
+    public void clearCanvas()
+    {
+        currTime.setValue(" ");
+        if (currButtonState == 1){
+            removeObject(bS);
+            removeObject(b);
+        }
+        if (currButtonState == 2){
+            removeObject(iS);
+            removeObject(i);
+        }
+        if (currButtonState == 3){
+            removeObject(sS);
+            removeObject(s);
+        }
+        if (currButtonState == 4){
+            removeObject(qS);
+            removeObject(q);
+        }
+        if (currButtonState == 5) {
+            removeObject(binary);
+            removeObject(mock);
+        }
+    }
+
+    /**
+     * Display the way that how Bubble Sort works
+     */
     public void bubbleSort()
     {
-        currTime.setValue(" ");
-        if (currButtonState == 1){
-            removeObject(bS);
-            removeObject(b);
-        }
-        if (currButtonState == 2){
-            removeObject(iS);
-            removeObject(i);
-        }
-        if (currButtonState == 3){
-            removeObject(sS);
-            removeObject(s);
-        }
-        if (currButtonState == 4){
-            removeObject(qS);
-            removeObject(q);
-        }
-        if (currButtonState == 5) {
-            removeObject(binary);
-            removeObject(mock);
-        }
-        
-        addObject(bS, 625, 212);
-        
-        b = new BubbleSort();
-        addObject(b, 625, 212);
-        b.run();
-        
-        addObject(currTime, 603, 410);
-        currButtonState = 1;
+        clearCanvas(); // Clean all the objects
+        addObject(bS, 625, 212); // Display the "Bubble Sort" sign for user
 
+        b = new BubbleSort(); // Re-initializing the object
+        addObject(b, 625, 212);
+        b.run(); // Run the sorting algorithm
+
+        addObject(currTime, 603, 410); // Display the amount of time that the bubble sort algorithm takes to sort the array
+        currButtonState = 1; // Keep track the currButton state
     }
 
+    /**
+     * Display the way that how Insertion Sort works
+     */
     public void insertionSort()
     {
-        currTime.setValue(" ");
-        if (currButtonState == 1){
-            removeObject(bS);
-            removeObject(b);
-        }
-        if (currButtonState == 2){
-            removeObject(iS);
-            removeObject(i);
-        }
-        if (currButtonState == 3){
-            removeObject(sS);
-            removeObject(s);
-        }
-        if (currButtonState == 4){
-            removeObject(qS);
-            removeObject(q);
-        }
-        if (currButtonState == 5) {
-            removeObject(binary);
-            removeObject(mock);
-        }
+        clearCanvas(); // Clean all the objects
+        addObject(iS, 625, 212); // Display the "Insertion Sort" sign for user
 
-        addObject(iS, 625, 212);
-        
-        i = new InsertionSort();
+        i = new InsertionSort(); // Re-initializing the object
         addObject(i, 625, 212);
-        i.run();
-        
-        addObject(currTime, 603, 410);
-        
-        currButtonState = 2;
+        i.run(); // Run the sorting algorithm
 
+        addObject(currTime, 603, 410); // Display the amount of time that the insertion sort algorithm takes to sort the array
+        currButtonState = 2; // Keep track the currButton state
     }
 
+    /**
+     * Display the way that how Selection Sort works
+     */
     public void selectionSort()
     {
-        currTime.setValue(" ");
-        if (currButtonState == 1){
-            removeObject(bS);
-            removeObject(b);
-        }
-        if (currButtonState == 2){
-            removeObject(iS);
-            removeObject(i);
-        }
-        if (currButtonState == 3){
-            removeObject(sS);
-            removeObject(s);
-        }
-        if (currButtonState == 4){
-            removeObject(qS);
-            removeObject(q);
-        }
-        if (currButtonState == 5) {
-            removeObject(binary);
-            removeObject(mock);
-        }
+        clearCanvas(); // Clean all the objects
+        addObject(sS, 625, 212); // Display the "Selection Sort" sign for user
 
-        addObject(sS, 625, 212);
-        
-        s = new SelectionSort();
+        s = new SelectionSort(); // Re-initializing the object
         addObject(s, 625, 212);
-        s.run();
-        
-        addObject(currTime, 603, 410);
-        
-        currButtonState = 3;
+        s.run(); // Run the sorting algorithm
 
+        addObject(currTime, 603, 410); // Display the amount of time that the selection sort algorithm takes to sort the array
+        currButtonState = 3; // Keep track the currButton state
     }
 
+    /**
+     * Display the way that how Quick Sort works
+     */
     public void quickSort()
     {
-        currTime.setValue(" ");
-        if (currButtonState == 1){
-            removeObject(bS);
-            removeObject(b);
-        }
-        if (currButtonState == 2){
-            removeObject(iS);
-            removeObject(i);
-        }
-        if (currButtonState == 3){
-            removeObject(sS);
-            removeObject(s);
-        }
-        if (currButtonState == 4){
-            removeObject(qS);
-            removeObject(q);
-        }
-        if (currButtonState == 5) {
-            removeObject(binary);
-            removeObject(mock);
-        }
+        clearCanvas(); // Clean all the objects
+        addObject(qS, 625, 212); // Display the "Quick Sort" sign for user
 
-        addObject(qS, 625, 212);
-        
-        q = new QuickSort();
+        q = new QuickSort(); // Re-initializing the object
         addObject(q, 625, 212);
-        q.run();
-        
-        addObject(currTime, 603, 410);
-        currButtonState = 4;
+        q.run(); // Run the sorting algorithm
 
+        addObject(currTime, 603, 410); // Display the amount of time that the quick sort algorithm takes to sort the array
+        currButtonState = 4; // Keep track the currButton state
     }
 
+    /**
+     * Display an Easter Egg
+     */
     public void binarySearch()
     {
-        currTime.setValue(" ");
-        if (currButtonState == 1){
-            removeObject(bS);
-            removeObject(b);
-        }
-        if (currButtonState == 2){
-            removeObject(iS);
-            removeObject(i);
-        }
-        if (currButtonState == 3){
-            removeObject(sS);
-            removeObject(s);
-        }
-        if (currButtonState == 4){
-            removeObject(qS);
-            removeObject(q);
-        }
-        if (currButtonState == 5) {
-            removeObject(binary);
-            removeObject(mock);
-        }
-        addObject(mock, 555, 295);
-        addObject(binary, 625, 212);
-        currButtonState = 5;
-
-        
-        
-
+        clearCanvas(); // Clean all the objects
+        addObject(mock, 555, 295); // Display the "mock" for user
+        addObject(binary, 625, 212); // Display the "Binary Search" sign for user
+        currButtonState = 5;// Keep track the currButton state
     }
-    
-    
+
+    /**
+     * Switch back to the question website
+     */
     public void hideAndSeek()
     {
         MouseInfo mouse = Greenfoot.getMouseInfo();
@@ -268,14 +193,12 @@ public class Computer_Cheating extends Computer
             mx = mouse.getX();
             my = mouse.getY();
             if (Greenfoot.mouseClicked(null)) {
-                if (mx > 267 && mx < 367 && my > 125 && my < 155) {//min and max should be the edges of the area;
+                if (mx > 267 && mx < 367 && my > 125 && my < 155) {
                     Computer_DMOMG c = new Computer_DMOMG();
                     Greenfoot.setWorld(c);
                 }
             }
-
         }
     }
-    
-    
+
 }

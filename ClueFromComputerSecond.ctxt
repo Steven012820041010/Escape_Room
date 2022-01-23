@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=ClueFromComputerSecond
-comment0.text=\n\ Write\ a\ description\ of\ class\ ClueFromComputerSecond\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ world\ displays\ the\ clue\ in\ annother\ way\ if\ user\ solves\ the\ question\ and\ wants\ to\ check\ the\ clue\ again\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 21,\ 2022\n
 comment1.params=
 comment1.target=ClueFromComputerSecond()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ ClueFromComputerSecond.\n\ \n

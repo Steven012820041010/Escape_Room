@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=ClueFromPrinter
-comment0.text=\n\ Write\ a\ description\ of\ class\ ClueFromPrinter\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ world\ displays\ the\ clue\ that\ user\ gets\ from\ the\ printer\ by\ winning\ the\ hunger\ snake\ game\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 10,\ 2022\n
 comment1.params=
 comment1.target=ClueFromPrinter()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ ClueFromPrinter.\n\ \n

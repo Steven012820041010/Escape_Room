@@ -1,11 +1,13 @@
 #BlueJ class context
 comment0.target=Computer
-comment0.text=\n\ Write\ a\ description\ of\ class\ Computer\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ world\ controls\ all\ the\ games\ and\ pages\ and\ providing\ 2\ methods,\ "closeTab"\ and\ "pressBack"\ that\ can\ be\ both\ used\ in\ all\ the\ sub-classes\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 15,\ 2022\n
 comment1.params=
 comment1.target=Computer()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Computer.\n\ \n
 comment2.params=
 comment2.target=void\ closeTab()
+comment2.text=\n\ Click\ the\ 'x'\ to\ close\ the\ tab\ on\ the\ computer\n
 comment3.params=
 comment3.target=void\ pressBack()
+comment3.text=\n\ Return\ to\ the\ question\ page\ by\ clicking\ the\ 'Back'\ button\n
 numComments=4

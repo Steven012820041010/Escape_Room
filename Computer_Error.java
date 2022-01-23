@@ -1,28 +1,21 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Computer_Error here.
+ * This world is also an easter egg, begging Mr.Chan to give us a 100%, or at least 99.99%. LOL (Bill came up with this, not Steven's idea)
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 19, 2022
  */
 public class Computer_Error extends Computer
 {
-
-    /**
-     * Constructor for objects of class Computer_Error.
-     * 
-     */
-    public Computer_Error()
-    {
-        
-    }
-    
     public void act(){
         restart();
         MainRoom.countDown();
     }
     
+    /**
+     * Back to the computer screen
+     */
     public void restart()
     {
         if (Greenfoot.isKeyDown("space")){

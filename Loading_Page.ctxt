@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Loading_Page
-comment0.text=\n\ Write\ a\ description\ of\ class\ Loading_Page\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ world\ displays\ the\ animaition\ of\ loading\ page\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 15,\ 2022\n
 comment1.params=
 comment1.target=Loading_Page()
 comment2.params=

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Loading_Page here.
+ * This world displays the animaition of loading page
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 15, 2022
  */
 public class Loading_Page extends World
 {
@@ -15,22 +15,17 @@ public class Loading_Page extends World
      */
     GreenfootImage loadingRec = new GreenfootImage("redRectangle.png"); // A red rectangle loading bar to show the loading process
     SimpleTimer loadingTimer = new SimpleTimer(); // To control the loading speed
-    
 
     public Loading_Page()
     {    
-        // Create a new world with 1280x720 cells with a cell size of 1x1 pixels.
+        // Create a new world with 1130x800 cells with a cell size of 1x1 pixels.
         super(1130, 800, 1); 
-        
         getBackground().drawImage(loadingRec, 236, 153); //Shows the red rectangle loading bar
-
     }
 
     public void act(){
         updateLoadingSign();
-        
         MainRoom.countDown();
-    
     }
 
     /**
@@ -57,7 +52,6 @@ public class Loading_Page extends World
         {
            Computer_DMOMG dmomg = new Computer_DMOMG();
            Greenfoot.setWorld(dmomg);
-          
         }
     }
 }

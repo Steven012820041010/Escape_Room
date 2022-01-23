@@ -1,9 +1,6 @@
 #BlueJ class context
 comment0.target=Computer_Redirecting
-comment0.text=\n\ Write\ a\ description\ of\ class\ Computer_Redirecting\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ world\ is\ kind\ of\ a\ loading\ page\ from\ Computer_Win\ to\ ClueFromComputer\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 15,\ 2022\n
 comment1.params=
-comment1.target=Computer_Redirecting()
-comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Computer_Redirecting.\n\ \n
-comment2.params=
-comment2.target=void\ act()
-numComments=3
+comment1.target=void\ act()
+numComments=2

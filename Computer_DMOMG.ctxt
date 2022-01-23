@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Computer_DMOMG
-comment0.text=\n\ Write\ a\ description\ of\ class\ Computer_DMOMG\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ world\ displays\ a\ question\ for\ the\ user.\ The\ question\ is\ testing\ the\ user's\ understanding\ toward\ the\ different\ sorting\ algorithms\ and\ the\n\ Big\ O\ Notation,\ which\ is\ also\ called\ time\ complexity.\ Users\ can\ submit\ their\ solution\ by\ clicking\ "Submit\ solution"\ button.\ Also,\ they\ can\ also\n\ cheat\ by\ clicking\ a\ hidden\ tab\ beside\ the\ current\ tab.\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 14,\ 2022\n
 comment1.params=
 comment1.target=Computer_DMOMG()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Computer_DMOMG.\n\ \n
@@ -8,8 +8,11 @@ comment2.params=
 comment2.target=void\ act()
 comment3.params=
 comment3.target=void\ continueCountdown()
+comment3.text=\n\ Continue\ to\ count\ down\ the\ time\ though\ leaving\ the\ Computer_Waiting\ world\n
 comment4.params=
 comment4.target=void\ goCheating()
+comment4.text=\n\ Switch\ to\ the\ cheating\ website\n
 comment5.params=
 comment5.target=void\ clickSubmit()
+comment5.text=\n\ Allow\ user\ to\ submit.\ If\ user's\ previous\ answer\ is\ wrong,\ user\ has\ to\ wait\ 10\ seconds\ to\ submit\ the\ solution\ again.\n
 numComments=6

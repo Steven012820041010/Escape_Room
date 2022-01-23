@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=MainRoom_Animation
-comment0.text=\n\ Write\ a\ description\ of\ class\ MainRoom_Animation\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ world\ displays\ the\ animaition\ of\ fading\ of\ main\ room\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 18,\ 2022\n
 comment1.params=
 comment1.target=MainRoom_Animation()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ MainRoom_Animation.\n\ \n

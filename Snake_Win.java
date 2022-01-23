@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Snake_Win here.
+ * This world is the winning page if user scores 15 points
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 11, 2022
  */
 public class Snake_Win extends World
 {
@@ -17,7 +17,7 @@ public class Snake_Win extends World
      */
     public Snake_Win()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 1130x800 cells with a cell size of 1x1 pixels.
         super(1130, 800, 1); 
         win = true;
         addObject(exit, 65, 35);

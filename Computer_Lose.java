@@ -1,28 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Computer_Lose here.
+ * This world displays the error page if the user submit the wrong answer
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 18, 2022
  */
 public class Computer_Lose extends Computer
 {
-
-    /**
-     * Constructor for objects of class Computer_Lose.
-     * 
-     */
-    public Computer_Lose()
-    {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        
-    }
     public void act(){
+        MainRoom.countDown();
         pressBack();
         closeTab();
-        MainRoom.countDown();
     }
-    
-    
+
 }

@@ -1,14 +1,12 @@
 #BlueJ class context
 comment0.target=Computer_Trashcan
-comment0.text=\n\ Write\ a\ description\ of\ class\ Computer_Trashcan\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ world\ is\ also\ an\ easter\ egg.\ It\ displays\ the\ past\ two\ greenfoot\ games\ we\ did\ before,\ but\ it\ would\ not\ show\ because\ the\ memory.\ LOL\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 17,\ 2022\n
 comment1.params=
-comment1.target=Computer_Trashcan()
+comment1.target=void\ act()
 comment2.params=
-comment2.target=void\ act()
+comment2.target=void\ clickOk()
 comment3.params=
-comment3.target=void\ clickOk()
+comment3.target=void\ clickPastProjects()
 comment4.params=
-comment4.target=void\ clickPastProjects()
-comment5.params=
-comment5.target=void\ close()
-numComments=6
+comment4.target=void\ close()
+numComments=5

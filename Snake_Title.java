@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Snake_Title here.
+ * This world shows the title page of the hunger snake game
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 11, 2022
  */
 public class Snake_Title extends World
 {
@@ -16,14 +16,12 @@ public class Snake_Title extends World
 
     public static Music figure = new Music();
     Exit exit = new Exit();
-
     public Snake_Title()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 1130x800 cells with a cell size of 1x1 pixels.
         super(1130, 800, 1); 
         addObject(exit, 65, 35);
         addObject(figure,160,550);
-
     }
     public void act()
     {
@@ -32,7 +30,6 @@ public class Snake_Title extends World
     }
     public void pressSpace()
     {
-
         if(Greenfoot.isKeyDown("space"))
         {
             Snake_Play sP = new Snake_Play();

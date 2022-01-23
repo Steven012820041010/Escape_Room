@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MainRoom_Animation here.
+ * This world displays the animaition of fading of main room
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 18, 2022
  */
 public class MainRoom_Animation extends World
 {
@@ -15,19 +15,19 @@ public class MainRoom_Animation extends World
      */
     public MainRoom_Animation()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 1130x800 cells with a cell size of 1x1 pixels.
         super(1130, 800, 1); 
         addObject(mR, 565, 400);
     }
     
     public void act()
     {
-        if (mR.titleI == 3 && mR.fading.millisElapsed() > 100){
+        if (mR.titleI == 3 && mR.fading.millisElapsed() > 100){ //Finish Animation
             MainRoom m = new MainRoom();
             Greenfoot.setWorld(m);
             return;
         }
         mR.update();
-        
+
     }
 }

@@ -1,10 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.*;
+
 /**
- * Write a description of class Snake_Play here.
+ * This world allows the user to play the hunger snake game. Use arrow key to control the snake and the goal is to get a clue by scoring 15 points
+ * We used recursion to generate the snake bodies. 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 11, 2022
  */
 public class Snake_Play extends World
 {
@@ -59,40 +61,32 @@ public class Snake_Play extends World
 
     public void act()
     {
-        //touchClueFromCarpet();
         MainRoom.countDown();
-
-        detectDirection();
         currPosi = 0;
+        detectDirection();
         eatApple();
         beatHighscore();
-        int currSpeed = (snakeSpeed - (numberOfBodies-1) * 10 > 40) ? snakeSpeed - (numberOfBodies-1) * 10 : 40;
+        move();
+    }
+    
+    /**
+     * Move the snake according to the method detectDirection()
+     */
+    public void move()
+    {
+        int currSpeed = (snakeSpeed - (numberOfBodies-1) * 10 > 40) ? snakeSpeed - (numberOfBodies-1) * 10 : 40; // set the current speed 
         if (previousDire == 1){
-            if (moveSpeed.millisElapsed() > currSpeed)
-            {
-                moveSnakeRight();
-            }
+            if (moveSpeed.millisElapsed() > currSpeed) moveSnakeRight();
         }
-        else if (previousDire == 2){
-            if (moveSpeed.millisElapsed() > currSpeed)
-            {
-                moveSnakeDown();
-            }
+        if (previousDire == 2){
+            if (moveSpeed.millisElapsed() > currSpeed) moveSnakeDown();
         }
-        else if (previousDire == 3){
-            if (moveSpeed.millisElapsed() > currSpeed)
-            {
-                moveSnakeLeft();
-            }
+        if (previousDire == 3){
+            if (moveSpeed.millisElapsed() > currSpeed) moveSnakeLeft();
         }
-        else if (previousDire == 4){
-            if (moveSpeed.millisElapsed() > currSpeed)
-            {
-                moveSnakeUp();
-            }
-
+        if (previousDire == 4){
+            if (moveSpeed.millisElapsed() > currSpeed) moveSnakeUp();
         }
-
     }
 
     public void beatHighscore()
@@ -104,24 +98,6 @@ public class Snake_Play extends World
         }
     }
 
-    public void touchClueFromCarpet()
-    {
-        MouseInfo mouse = Greenfoot.getMouseInfo();
-        int mx, my;
-        if(mouse!=null){
-            mx = mouse.getX();
-            my = mouse.getY();
-            if (Greenfoot.mouseClicked(null)) {
-                System.out.println(mx);
-                System.out.println(my);
-                if (mx > 838 && mx < 848 && my > 710 && my < 720) {//min and max should be the edges of the area;
-                   
-                    ClueFromCarpet cFC = new ClueFromCarpet();
-                    Greenfoot.setWorld(cFC);
-                }
-            }
-        }
-    }
     public void touchWallOrSelf()
     {
         if (currSnakeX < 150 || currSnakeX > 965 || currSnakeY < 104 || currSnakeY > 497)
@@ -147,7 +123,6 @@ public class Snake_Play extends World
         {
             numberOfBodies++;
             userScore.setValue(numberOfBodies-1);
-
             //Right
             if (previousDire == 1){
                 int[] newBody = {currSnakeX - 18, currSnakeY};

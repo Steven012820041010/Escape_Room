@@ -1,16 +1,20 @@
 #BlueJ class context
 comment0.target=Computer_Maze_Win
-comment0.text=\n\ Write\ a\ description\ of\ class\ Computer_Maze_Win\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ world\ displays\ the\ shortest\ path\ of\ walking\ through\ the\ maze\ and\ allows\ the\ user\ to\ compare\ it\ with\ their\ own\ paths.\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 20,\ 2022\n
 comment1.params=
 comment1.target=Computer_Maze_Win()
 comment2.params=
 comment2.target=void\ setUpCorrectPath()
+comment2.text=\n\ Find\ the\ correct\ coordinates\ for\ the\ guider\n
 comment3.params=
 comment3.target=void\ act()
 comment4.params=
 comment4.target=void\ demonstration()
+comment4.text=\n\ Demonstrate\ the\ closest\ path\n
 comment5.params=
 comment5.target=void\ closeWindow()
+comment5.text=\n\ Switch\ to\ the\ maze\ game\n
 comment6.params=
 comment6.target=void\ bfs()
+comment6.text=\n\ Algorithm\ for\ searching\ a\ tree\ data\ structure\ for\ a\ node\ that\ satisfies\ a\ given\ property.\n
 numComments=7

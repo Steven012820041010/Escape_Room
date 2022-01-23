@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=End_Screen
-comment0.text=\n\ Write\ a\ description\ of\ class\ End_Screen\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ world\ is\ the\ end\ page\ and\ tells\ the\ user\ how\ long\ they\ have\ spent\ to\ escape\ the\ room\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 19,\ 2022\n
 comment1.params=
 comment1.target=End_Screen()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ End_Screen.\n\ \n

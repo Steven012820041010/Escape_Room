@@ -1,13 +1,18 @@
 #BlueJ class context
 comment0.target=Computer_Maze
-comment0.text=\n\ Write\ a\ description\ of\ class\ Computer_Maze\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ world\ displays\ the\ maze\ game.\ This\ maze\ game\ is\ mainly\ focusing\ on\ how\ to\ use\ 2D\ array\ and\ queue\ to\ find\ the\ shortest\ path\ of\ the\ maze.\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 20,\ 2022\n
 comment1.params=
 comment1.target=Computer_Maze()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Computer_Maze.\n\ \n
 comment2.params=
 comment2.target=void\ setUpMaze()
+comment2.text=\n\ Set\ up\ the\ maze\ and\ set\ the\ wall\ coordinates\ to\ false\n
 comment3.params=
 comment3.target=void\ act()
 comment4.params=
-comment4.target=void\ detectDirection()
-numComments=5
+comment4.target=void\ closeTab()
+comment4.text=\n\ Switch\ to\ the\ maze\ game\n
+comment5.params=
+comment5.target=void\ detectDirection()
+comment5.text=\n\ Detect\ the\ player's\ direction\ and\ upate\ the\ player's\ current\ position\ \n
+numComments=6

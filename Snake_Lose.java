@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Snake_End here.
+ * This world tells that the snake is either touching itself or touching the wall
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 11, 2022
  */
 public class Snake_Lose extends World
 {
@@ -15,20 +15,17 @@ public class Snake_Lose extends World
      */
     public Snake_Lose()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 1130x800 cells with a cell size of 1x1 pixels.
         super(1130, 800, 1); 
     }
     public void act()
     {
         pressSpace(); 
-        
         MainRoom.countDown();
-    
     }
     
     public void pressSpace()
     {
-         
         if(Greenfoot.isKeyDown("space"))
         {
             Snake_Play sP = new Snake_Play();

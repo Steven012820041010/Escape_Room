@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Snake_Win
-comment0.text=\n\ Write\ a\ description\ of\ class\ Snake_Win\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ world\ is\ the\ winning\ page\ if\ user\ scores\ 15\ points\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 11,\ 2022\n
 comment1.params=
 comment1.target=Snake_Win()
 comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Snake_Win.\n\ \n

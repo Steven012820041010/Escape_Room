@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ClueFromComputer here.
+ * This world displays the clue on computer that user solves the question 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 17, 2022
  */
 public class ClueFromComputer extends World
 {
@@ -15,11 +15,15 @@ public class ClueFromComputer extends World
      */
     public ClueFromComputer()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 1130x800 cells with a cell size of 1x1 pixels.
         super(1130, 800, 1); 
-        MainRoom.computer = true;
-        addObject(exit, 65, 35);
+        MainRoom.computer = true; // Sets the boolean "computer" to true
+        //addObject(exit, 65, 35); // Add the exit button 
     }
+    
+    /**
+     * Click the 'x' to close the tab on the computer
+     */
     public void closeTab()
     {
         MouseInfo mouse = Greenfoot.getMouseInfo();
@@ -27,12 +31,9 @@ public class ClueFromComputer extends World
         if(mouse!=null){
             mx = mouse.getX();
             my = mouse.getY();
-            
             if (Greenfoot.mouseClicked(null)) {
-                //System.out.println(mx);
-                //System.out.println(my);
-                if (mx > 852 && mx < 872 && my > 110 && my < 130) {//min and max should be the edges of the area;
-                    Computer_Screen cS = new Computer_Screen();
+                if (mx > 852 && mx < 872 && my > 110 && my < 130) {
+                    Computer_Screen cS = new Computer_Screen(); // Switch to the main computer screen
                     Greenfoot.setWorld(cS);
                 }
             }
@@ -41,7 +42,7 @@ public class ClueFromComputer extends World
     
     public void act()
     {
-        MainRoom.countDown();
+        MainRoom.countDown(); //Keep recording the time the user takes
         closeTab();
     }
 }

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ClueFromComputerSecond here.
+ * This world displays the clue in annother way if user solves the question and wants to check the clue again
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 21, 2022
  */
 public class ClueFromComputerSecond extends World
 {
@@ -15,13 +15,12 @@ public class ClueFromComputerSecond extends World
      */
     public ClueFromComputerSecond()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        // Create a new world with 1130x800 cells with a cell size of 1x1 pixels.
         super(1130, 800, 1); 
-        addObject(exit, 65, 35);
+        addObject(exit, 65, 35); //Add the exit button
     }
-    
     public void act()
     {
-        MainRoom.countDown();
+        MainRoom.countDown(); //Keep recording the time the user takes
     }
 }

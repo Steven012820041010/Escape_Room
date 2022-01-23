@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Snake_Play
-comment0.text=\n\ Write\ a\ description\ of\ class\ Snake_Play\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ world\ allows\ the\ user\ to\ play\ the\ hunger\ snake\ game.\ Use\ arrow\ key\ to\ control\ the\ snake\ and\ the\ goal\ is\ to\ get\ a\ clue\ by\ scoring\ 15\ points\n\ We\ used\ recursion\ to\ generate\ the\ snake\ bodies.\ \n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 11,\ 2022\n
 comment1.params=
 comment1.target=Snake_Play()
 comment10.params=
@@ -16,9 +16,10 @@ comment14.target=void\ moveSnakeUp()
 comment2.params=
 comment2.target=void\ act()
 comment3.params=
-comment3.target=void\ beatHighscore()
+comment3.target=void\ move()
+comment3.text=\n\ Move\ the\ snake\ according\ to\ the\ method\ detectDirection()\n
 comment4.params=
-comment4.target=void\ touchClueFromCarpet()
+comment4.target=void\ beatHighscore()
 comment5.params=
 comment5.target=void\ touchWallOrSelf()
 comment6.params=
