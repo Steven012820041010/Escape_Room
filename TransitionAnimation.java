@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Press_Space here.
+ * Write a description of class TransitionAnimation here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Press_Space extends Helper
+public class TransitionAnimation extends Actor
 {
     /**
-     * Act - do whatever the Press_Space wants to do. This method is called whenever
+     * Act - do whatever the TransitionAnimation wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 

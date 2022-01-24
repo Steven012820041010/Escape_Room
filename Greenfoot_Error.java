@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Greenfoot_Error here.
+ * This class is an Easter egg. LOL
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 19, 2022
  */
-public class Greenfoot_Error extends Actor
+public class Greenfoot_Error extends Helper
 {
     /**
      * Act - do whatever the Greenfoot_Error wants to do. This method is called whenever

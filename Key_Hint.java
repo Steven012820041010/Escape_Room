@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Key_Hint here.
+ * This class is responsible for user to find clue
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 13, 2022
  */
-public class Key_Hint extends Actor
+public class Key_Hint extends Props
 {
     /**
      * Act - do whatever the Key_Hint wants to do. This method is called whenever

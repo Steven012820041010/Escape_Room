@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class InsertionSort here.
+ * This class is to show how insertion sort works
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 16, 2022
  */
 public class InsertionSort extends Sort
 {
@@ -45,7 +45,6 @@ public class InsertionSort extends Sort
 
         String result = Double.toString(time);
         cC.currTime.setValue(result);
-        //System.out.println("hi");
 
     }   
     

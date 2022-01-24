@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @Steven Zhu, Bill Wei, Eric Chen
  * @Jan 10, 2022
  */
-public class Apple extends Actor
+public class Apple extends Props
 {
     /**
      * Act - do whatever the Apple wants to do. This method is called whenever

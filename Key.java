@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Key here.
+ * This class is responsible for user to find clue
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 13, 2022
  */
-public class Key extends Actor
+public class Key extends Props
 {
     /**
      * Act - do whatever the Key wants to do. This method is called whenever

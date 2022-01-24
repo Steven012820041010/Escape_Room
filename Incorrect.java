@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Incorrect here.
+ * This class is to tell user they are wrong if they input a wrong password
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 17, 2022
  */
-public class Incorrect extends Actor
+public class Incorrect extends Helper
 {
     /**
      * Act - do whatever the Incorrect wants to do. This method is called whenever

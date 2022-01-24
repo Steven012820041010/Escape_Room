@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Sort
-comment0.text=\n\ This\ class\ contains\ all\ the\ four\ sorting\ algorithms\ and\ some\ helper\ methods\ such\ as\ setup,\ swap,\ drawArray\ \n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ class\ is\ just\ provide\ basic\ helper\ methods\ for\ sorting\ algorithms\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 15,\ 2022\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ Sort\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n

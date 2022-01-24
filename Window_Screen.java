@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Window_Screen extends Actor
+public class Window_Screen extends Helper
 {
     /**
      * Act - do whatever the Window_Screen wants to do. This method is called whenever

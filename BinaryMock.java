@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @Steven Zhu, Bill Wei, Eric Chen
  * @Jan 17, 2022
  */
-public class BinaryMock extends Actor
+public class BinaryMock extends Sign
 {
     /**
      * Act - do whatever the BinaryMock wants to do. This method is called whenever

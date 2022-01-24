@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * This class contains all the four sorting algorithms and some helper methods such as setup, swap, drawArray 
+ * This class is just provide basic helper methods for sorting algorithms
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 15, 2022
  */
 public class Sort extends Canvas
 {
@@ -16,8 +16,7 @@ public class Sort extends Canvas
     {
         // Add your action code here.
     }   
-    
-    
+
     /**
      * Set up the array so that every element has a value that is an integer
      * from 1 to the length of the array (1 - N).
@@ -28,11 +27,10 @@ public class Sort extends Canvas
         for (int i=1; i<=arr.length; i++)
         {
             arr[i-1] = (double)(i / 8.0);
-           // System.out.println("hie");
         }
-        
+
     }
-    
+
     /**
      * TODO: Implement this method
      * Swap elements at index positions i and j in the given array.  
@@ -45,9 +43,9 @@ public class Sort extends Canvas
         double tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;
-        
+
     }
-    
+
     /**
      * Shuffle an array using the Fisher-Yates method.
      * The Fisher-Yates method iterates the array once, swapping each
@@ -91,7 +89,7 @@ public class Sort extends Canvas
     public void drawArray(double [] arr, int k)
     {
         // Exit this method if k is larger than the length of the array
-        
+
         if(k > arr.length)
         {
             return;
@@ -104,11 +102,8 @@ public class Sort extends Canvas
             double x = i * bin / 2.52 + 0.247;
             double y = 0.348;
 
-            // Change the color for the one index
-            // Draw a rectangle on the canvas
             rect2(x, y, bin, height);
-            
-            
+
         }
         Greenfoot.delay(1);
         // Show the canvas

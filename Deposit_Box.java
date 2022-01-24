@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Deposit_Box extends Actor
+public class Deposit_Box extends Props
 {
     /**
      * Act - do whatever the Deposit_Box wants to do. This method is called whenever

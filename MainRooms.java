@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MainRooms extends Actor
+public class MainRooms extends TransitionAnimation
 {
     /**
      * Act - do whatever the MainRooms wants to do. This method is called whenever

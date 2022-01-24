@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Doors extends Actor
+public class Doors extends TransitionAnimation
 {
     /**
      * Act - do whatever the door wants to do. This method is called whenever
@@ -44,9 +44,8 @@ public class Doors extends Actor
             fading.mark();
             titleI++;
             setCurrPage();
-            //System.out.println(i);
+            
         }
-        //fading.mark();
-
+       
     } 
 }

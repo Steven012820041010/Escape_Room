@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Maze_Player here.
+ * This class is to display the maze monster
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 19, 2022
  */
-public class Maze_Player extends Actor
+public class Maze_Player extends Player
 {
     /**
      * Act - do whatever the Maze_Player wants to do. This method is called whenever

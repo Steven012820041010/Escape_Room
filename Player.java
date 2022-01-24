@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * This class is responsible for displaying the correct path for user
+ * Write a description of class Player here.
  * 
- * @Steven Zhu, Bill Wei, Eric Chen
- * @Jan 2, 2022
+ * @author (your name) 
+ * @version (a version number or a date)
  */
-public class Guider extends Helper
+public class Player extends Actor
 {
     /**
-     * Act - do whatever the Guider wants to do. This method is called whenever
+     * Act - do whatever the Player wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 

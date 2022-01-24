@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class File_Explorer here.
+ * This class is just demonstrate what's inside the file explorer
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 14, 2022
  */
-public class File_Explorer extends Actor
+public class File_Explorer extends Helper
 {
     /**
      * Act - do whatever the File_Explorer wants to do. This method is called whenever

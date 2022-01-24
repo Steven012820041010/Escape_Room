@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Main extends Actor
+public class Main extends TransitionAnimation
 {
     /**
      * Act - do whatever the Title wants to do. This method is called whenever

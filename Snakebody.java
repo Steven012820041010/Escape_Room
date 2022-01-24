@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Snakebody here.
+ * This class is to display the snake body
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 10, 2022
  */
-public class Snakebody extends Actor
+public class Snakebody extends Player
 {
     /**
      * Act - do whatever the Snakebody wants to do. This method is called whenever

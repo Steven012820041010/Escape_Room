@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Exit here.
+ * This class is responsible for user to return to the MainRoom
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 10, 2022
  */
-public class Exit extends Actor
+public class Exit extends Helper
 {
     /**
      * Act - do whatever the Exit wants to do. This method is called whenever
