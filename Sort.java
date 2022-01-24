@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Sort here.
+ * This class contains all the four sorting algorithms and some helper methods such as setup, swap, drawArray 
  * 
  * @author (your name) 
  * @version (a version number or a date)

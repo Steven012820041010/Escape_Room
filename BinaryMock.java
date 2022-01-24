@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class BinaryMock here.
+ * This class will display a trolling message when user clicks "Binary Search" 
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 17, 2022
  */
 public class BinaryMock extends Actor
 {

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Canvas
-comment0.text=\n\ This\ class\ contains\ methods\ to\ make\ simple\ drawings.\n\ Extend\ this\ class\ to\ make\ your\ own\ canvas\ for\ drawing.\n\ Override\ the\ 'run()'\ method\ in\ the\ subclass\n
+comment0.text=\n\ This\ class\ contains\ methods\ to\ make\ simple\ drawings.\n\ Extend\ this\ class\ to\ make\ your\ own\ canvas\ for\ drawing.\n\ Override\ the\ 'run()'\ method\ in\ the\ subclass\n\ \n\ @MR_CHAN,\ Steven\ Zhu\n\ @Jan\ 17,\ 2022\n
 comment1.params=
 comment1.target=Canvas()
 comment10.params=color

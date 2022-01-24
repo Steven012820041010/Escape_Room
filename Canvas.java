@@ -4,6 +4,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * This class contains methods to make simple drawings.
  * Extend this class to make your own canvas for drawing.
  * Override the 'run()' method in the subclass
+ * 
+ * @MR_CHAN, Steven Zhu
+ * @Jan 17, 2022
  */
 public class Canvas extends Actor
 {    
