@@ -93,8 +93,7 @@ public class Computer_Submit extends Computer
                 }
             }
         }
-        //System.out.println(userChoice);
-
+    
     }
 
     

@@ -44,7 +44,7 @@ public class MainRooms extends TransitionAnimation
             fading.mark();
             titleI++;
             setCurrPage();
-            //System.out.println(i);
+            
         }
         //fading.mark();
 

@@ -9,8 +9,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Computer_Waiting extends Computer
 {
     static SimpleTimer countTime = new SimpleTimer(); // Control the speed of count down time
-    static int currentTime = 10; // Waiting for user to resumbit their solution
+    static int currentTime = 5; // Waiting for user to resumbit their solution
     static Label time = new Label (currentTime, 30); // Display the time that has left for user to resubmit
+    static boolean returnDMOMG = false;
     /**
      * Constructor for objects of class Computer_Waiting.
      * 
@@ -18,6 +19,7 @@ public class Computer_Waiting extends Computer
     public Computer_Waiting()
     {
         countTime.mark();
+        returnDMOMG = false;
         time.setFillColor(Color.BLACK); // Set the label "time" to color black
         addObject(time, 358, 350); // Display the time on the screen
     }
@@ -27,16 +29,18 @@ public class Computer_Waiting extends Computer
         countDown();
         pressBack();
         finish();
+        canReturn();
         MainRoom.countDown();
     }
 
     /**
-     * Reset the waiting time for th
+     * Reset the waiting time
      */
     public static void initialize()
     {
         if (currentTime == 0){
-            currentTime = 10;
+            currentTime = 5;
+            
             time = new Label (currentTime, 30); // reinitializing the variable
         }
     }
@@ -50,8 +54,19 @@ public class Computer_Waiting extends Computer
         {
             Computer_DMOMG.canPressSubmit = true;
             Computer_Submit.correctOrWrong = true;
+            returnDMOMG = true;
         }
     }
+    
+    public void canReturn()
+    {
+        if (returnDMOMG){
+            
+            Computer_DMOMG cd = new Computer_DMOMG();
+            Greenfoot.setWorld(cd);
+        }
+    }
+    
 
     /**
      * Count down the time, in seconds
