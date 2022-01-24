@@ -150,8 +150,8 @@ public class Snake_Play extends World
     public void respawnApple()
     {
         removeObject(apple);
-        currAppleX = Greenfoot.getRandomNumber(775) + 185;
-        currAppleY = Greenfoot.getRandomNumber(354) + 137;
+        currAppleX = 18 * Greenfoot.getRandomNumber(46) + 151;
+        currAppleY = 18 * Greenfoot.getRandomNumber(22) + 110;
         addObject(apple, currAppleX, currAppleY);
     }
 
