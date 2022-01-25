@@ -26,21 +26,44 @@ A classic room escape game, with a computer science themed twist. Find all the c
 
 
 == VERSION + DATE ==
-Version 2.1 @ Janurary 21, 2022
+Janurary 25, 2022
 
 
 == HOW TO START THIS PROJECT ==
 Open the greenfoot file, and click the run button at the bottom to start this game. Make sure Greenfoot is pointed at the TitlePage class under the World superclass. 
 
 
-USER INSTRUCTIONS:
+== USER INSTRUCTIONS ==
 Click around the room, and see if you can find all the clues that will allow you to escape
 The clues could be hiding anywhere around the room!
 Once you have discovered the clue, you can revisit it by clicking the numbered boxes that will appear on the top left of your screen
 If you are REALLY stuck, you can check out the intended way of solving it below, although trying it for yourself first is highly recommended.
 
 
-DATA STRUCTURES USED:
+== ALGORITHMS & NOTABLE DATA STRUCTURE USED [GAME SPOILERS] ==
+THIS SECTION CONTAINS SPOILERS TO THE GAME so you may want to complete it first before reading down
+
+
+
+
+
+
+Recursion - Procedrally generate the snake as it gets longer in the snake game, located in the Snake_Play class
+
+Various sorting algorithms - The website displaying sorting algorithms with timer, located in their own classes. Includes Bubble, Insertion, Selection and Quicksort 
+
+Stack - displaying user inputted password on the numpad lock, that allows the user to backspace to remove the previous input, located in the Door class
+
+Queue - finding the shortest path of the maze in the "Maze Game" as a part of the BFS algorithm, located in Computer_Maze_Win class
+
+Boolean 2D Array - In the "Maze Game" on the computer, keep track of the spots on the grid map that are blocked by the red dots that the user is not allowed to step on, located in Computer_Maze class
+
+
+
+
+
+
+
 
 
 
