@@ -97,7 +97,10 @@ public class Snake_Play extends World
             Greenfoot.setWorld(sW);
         }
     }
-
+    
+    /**
+     * Detect if snake has touched the wall or eat itself
+     */
     public void touchWallOrSelf()
     {
         if (currSnakeX < 150 || currSnakeX > 965 || currSnakeY < 104 || currSnakeY > 497)
@@ -150,11 +153,15 @@ public class Snake_Play extends World
     public void respawnApple()
     {
         removeObject(apple);
-        currAppleX = 18 * Greenfoot.getRandomNumber(45) + 157;
+        currAppleX = 18 * Greenfoot.getRandomNumber(42) + 157;
         currAppleY = 18 * Greenfoot.getRandomNumber(21) + 109;
         addObject(apple, currAppleX, currAppleY);
     }
 
+    /**
+     * Using an recursion method to draw the snake. With just need to update the first snake body index, let draw the second body at the previous
+     * first body index, and draw the third body at the second body index.
+     */
     public void drawSnake(int N, int X, int Y)
     {
         if (N == 0) return;
