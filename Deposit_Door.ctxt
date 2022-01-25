@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Deposit_Door
-comment0.text=\n\ Write\ a\ description\ of\ class\ Deposit_Door\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ When\ user\ touches\ the\ lock\ on\ the\ door,\ the\ door\ opens\ to\ show\ the\ clue\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 13,\ 2022\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ Deposit_Door\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n

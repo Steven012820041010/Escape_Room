@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class door here.
+ * This class is responsible when user enters the correct password, the door's opening animation
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 20, 2022
  */
 public class Doors extends TransitionAnimation
 {
@@ -38,13 +38,16 @@ public class Doors extends TransitionAnimation
 
     }
 
+    /**
+     * Updating the next animation
+     */
     public void update(){
 
         if (fading.millisElapsed() > 700){
             fading.mark();
             titleI++;
             setCurrPage();
-            
+ 
         }
        
     } 

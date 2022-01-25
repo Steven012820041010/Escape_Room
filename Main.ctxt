@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Main
-comment0.text=\n\ Write\ a\ description\ of\ class\ Title\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ class\ is\ responsible\ of\ the\ transition\ from\ title\ page\ to\ the\ mainroom\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 20,\ 2022\n
 comment1.params=
 comment1.target=Main()
 comment2.params=
@@ -9,6 +9,4 @@ comment3.params=
 comment3.target=void\ setTitlePage()
 comment4.params=
 comment4.target=void\ update()
-comment5.params=
-comment5.target=void\ act()
-numComments=6
+numComments=5

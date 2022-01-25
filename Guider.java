@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * This class is responsible for displaying the correct path for user
  * 
  * @Steven Zhu, Bill Wei, Eric Chen
- * @Jan 2, 2022
+ * @Jan 22, 2022
  */
 public class Guider extends Helper
 {

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=BinaryMock
-comment0.text=\n\ This\ class\ will\ display\ a\ trolling\ message\ when\ user\ clicks\ "Binary\ Search"\ \n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 17,\ 2022\n
+comment0.text=\n\ This\ class\ is\ an\ easter\ egg.\ Trolling\ user\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 15,\ 2022\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ BinaryMock\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n

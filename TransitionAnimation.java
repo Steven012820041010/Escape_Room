@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class TransitionAnimation here.
+ * This class is the parent class for transition animation of the title page, main room, and opening door
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 20, 2022
  */
 public class TransitionAnimation extends Actor
 {

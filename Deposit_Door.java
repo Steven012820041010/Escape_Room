@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Deposit_Door here.
+ * When user touches the lock on the door, the door opens to show the clue
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 13, 2022
  */
 public class Deposit_Door extends Props
 {

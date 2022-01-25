@@ -23,8 +23,8 @@ public class Snake_Play extends World
 
     SimpleTimer moveSpeed = new SimpleTimer(); // Control the speed of the snake in case it won't go too fast
     Snakebody sB = new Snakebody();
-    int currSnakeX = 400; // Record the initial x-index of the snake
-    int currSnakeY = 300; // Record the initial y-index of the snake
+    int currSnakeX = 427; // Record the initial x-index of the snake
+    int currSnakeY = 307; // Record the initial y-index of the snake
     int previousDire = 1; // Right: 1; Down: 2; Left: 3; Up: 4;
     int snakeSpeed = 230; // Moving speed of the snake
 
@@ -35,8 +35,8 @@ public class Snake_Play extends World
     int currPosi = 0; // Record the current Index position
 
     Apple apple = new Apple();
-    int currAppleX = Greenfoot.getRandomNumber(775) + 185; // Record the initial x-index of the apple
-    int currAppleY = Greenfoot.getRandomNumber(354) + 137; // Record the initial y-index of the apple
+    int currAppleX = 18 * Greenfoot.getRandomNumber(46) + 157; // Record the initial x-index of the apple
+    int currAppleY = 18 * Greenfoot.getRandomNumber(22) + 109; // Record the initial y-index of the apple
 
     Label userScore = new Label(numberOfBodies-1, 50);
     Label highscore = new Label(15, 50);
@@ -150,8 +150,8 @@ public class Snake_Play extends World
     public void respawnApple()
     {
         removeObject(apple);
-        currAppleX = 18 * Greenfoot.getRandomNumber(46) + 151;
-        currAppleY = 18 * Greenfoot.getRandomNumber(22) + 110;
+        currAppleX = 18 * Greenfoot.getRandomNumber(45) + 157;
+        currAppleY = 18 * Greenfoot.getRandomNumber(21) + 109;
         addObject(apple, currAppleX, currAppleY);
     }
 

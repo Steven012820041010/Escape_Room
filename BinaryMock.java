@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * This class will display a trolling message when user clicks "Binary Search" 
+ * This class is an easter egg. Trolling user
  * 
  * @Steven Zhu, Bill Wei, Eric Chen
- * @Jan 17, 2022
+ * @Jan 15, 2022
  */
 public class BinaryMock extends Sign
 {

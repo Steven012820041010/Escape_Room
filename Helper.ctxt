@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Helper
-comment0.text=\n\ Write\ a\ description\ of\ class\ Helper\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ This\ class\ is\ the\ parent\ class\ that\ will\ include\ all\ helper\ class\n\ \n\ @Steven\ Zhu,\ Bill\ Wei,\ Eric\ Chen\n\ @Jan\ 23,\ 2022\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\n\ Act\ -\ do\ whatever\ the\ Helper\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n

@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * This world is also an easter egg, begging Mr.Chan to give us a 100%, or at least 99.99%. LOL (Bill came up with this, not Steven's idea)
+ * This world is also an easter egg, begging Mr.Chan to give us a 100%, or at least 99.99%. LOL (Bill came up with this, not Steven's idea, just 
+ * blame bill)
  * 
  * @Steven Zhu, Bill Wei, Eric Chen
  * @Jan 19, 2022

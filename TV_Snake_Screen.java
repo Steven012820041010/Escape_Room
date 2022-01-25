@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class TV_Screen here.
+ * This class only displays when the user presses the button on the DVD player
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 12, 2022
  */
 public class TV_Snake_Screen extends Helper
 {
