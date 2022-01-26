@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MainRooms here.
+ * This class is responsible of the transition in the title page
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Steven Zhu, Bill Wei, Eric Chen
+ * @Jan 20, 2022
  */
 public class MainRooms extends TransitionAnimation
 {
@@ -35,18 +35,12 @@ public class MainRooms extends TransitionAnimation
         for(int i=1; i<5; i++){
             image[i-1] = new GreenfootImage("M" + i + ".png");
         }
-
     }
-
     public void update(){
-
         if (fading.millisElapsed() > 100){
             fading.mark();
             titleI++;
             setCurrPage();
-            
         }
-        //fading.mark();
-
     }    
 }
